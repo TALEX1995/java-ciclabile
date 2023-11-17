@@ -39,6 +39,16 @@ public class Number {
 		return currentIndex != 0;
 	}
 	
-	
+	public void addElemento(int newNumber) {
+		int[] newNumbers = new int[numbers.length + 1];
+		
+		for(int i = 0; i < numbers.length; i++) {
+			newNumbers[i] = numbers[i];
+		}
+		
+		newNumbers[numbers.length] = newNumber;
+		
+		numbers = newNumbers;
+	}
 	
 }
